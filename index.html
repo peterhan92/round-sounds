@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Circles</title>
+	<title>Round Sounds</title>
 	<link rel="stylesheet" href="assets/css/style.css">
 	<script type="text/javascript" src="assets/paper-full.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.3/howler.js"></script>
 	<!-- Define inlined PaperScript associate it with myCanvas -->
-	<script type="text/paperscript" canvas="myCanvas">
+	<script type="text/paperscript" canvas="my-canvas">
 		var keyData = {
 			q: {
 				sound: new Howl({
@@ -189,11 +189,10 @@
 		      circles.splice(i, 1);
 		    }
 			}
-
 		}
 	</script>
 </head>
 <body>
-	<canvas id="myCanvas" resize></canvas>
+	<canvas id="my-canvas" resize>Your browser does not support canvas</canvas>
 </body>
 </html>
